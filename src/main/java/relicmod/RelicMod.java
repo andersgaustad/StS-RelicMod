@@ -27,6 +27,7 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		BaseMod.subscribe(this);
 	}
 	
+	
 	public void initialize() {
 		new RelicMod();
 	}
@@ -44,7 +45,5 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
 	}
-	
-	
-	
+		
 }
