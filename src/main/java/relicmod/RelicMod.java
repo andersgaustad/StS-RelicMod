@@ -15,6 +15,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import relics.BlackLotus;
+import relics.WantedPoster;
 
 @SpireInitializer
 public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
@@ -44,6 +45,8 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		logger.info("Adding relics...");
 		
 		BaseMod.addRelic(new BlackLotus(), RelicType.SHARED);
+		
+		BaseMod.addRelic(new WantedPoster(), RelicType.SHARED);
 		
 		logger.info("Relics added!");
 	}

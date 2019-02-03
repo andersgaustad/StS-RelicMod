@@ -6,9 +6,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 
 // Grants 3 mana at the start of eac boss battle
+// Maybe common relic?
 public class BlackLotus extends AbstractRelicModRelic {
 	
-	public static final String ID = "BlackLotus";
+	public static final String ID = "Black_Lotus";
 	
 	private static final int blackLotusEnergyGain = 3;
 	

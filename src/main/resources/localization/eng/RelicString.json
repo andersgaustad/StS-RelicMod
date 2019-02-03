@@ -1,9 +1,20 @@
 {
-  "BlackLotus": {
+  "Black_Lotus": {
     "NAME": "Black Lotus",
     "FLAVOR": "It feels ancient... and powerful.",
     "DESCRIPTIONS": [
       "At the start of Boss combats, add [E] [E] [E] ."
     ]
+  },
+  
+  "Wanted_Poster": {
+    "NAME": "Wanted Poster",
+    "FLAVOR": "WANTED; dead or ...well, dead.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #b",
+      "#yVulnerable to ALL Elites and Bosses. Gain #b",
+      "yGold for each Elite and Boss killed."
+    ]
   }
+  
 }
