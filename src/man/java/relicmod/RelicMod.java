@@ -6,21 +6,21 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 import basemod.BaseMod;
+import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import relics.BlackLotus;
 
 @SpireInitializer
 public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 	
 	public static final Logger logger = LogManager.getLogger(RelicMod.class.getName());
 	
-	
-	private static String language = "english";
+	private static String language = "eng";
 	
 	public RelicMod() {
 		logger.info("RelicMod was created.");
@@ -33,7 +33,7 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 
 	@Override
 	public void receiveEditRelics() {
-		// TODO Auto-generated method stub
+		BaseMod.addRelic(new BlackLotus(), RelicType.SHARED);
 		
 	}
 
@@ -46,12 +46,5 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 	}
 	
 	
-	public static final Texture getTexture(String resource) {
-		return new Texture("images/" + resource);
-	}
-	
-	public static final Texture getRelicTexture(String relic) {
-		return getTexture("relics/" + relic);
-	}
 	
 }
