@@ -12,8 +12,8 @@
     "FLAVOR": "WANTED; dead or ...well, dead.",
     "DESCRIPTIONS": [
       "At the start of each combat, apply #b",
-      "#yVulnerable to ALL Elites and Bosses. Gain #b",
-      "yGold for each Elite and Boss killed."
+      " #yVulnerable to ALL Elites and Bosses. Gain #b",
+      " #yGold for each Elite and Boss killed."
     ]
   }
   

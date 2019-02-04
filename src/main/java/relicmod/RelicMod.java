@@ -37,10 +37,6 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 
 	@Override
 	public void receiveEditRelics() {
-		// image loading works?
-		logger.info("Trying to load image...");
-		new Texture("relicmod_images/relics/BlackLotus.png");
-		logger.info("Image was loaded");
 		
 		logger.info("Adding relics...");
 		
