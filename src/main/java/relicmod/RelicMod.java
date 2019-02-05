@@ -6,7 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
@@ -15,6 +14,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import relics.BlackLotus;
+import relics.Powerstone;
 import relics.WantedPoster;
 
 @SpireInitializer
@@ -43,6 +43,8 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		BaseMod.addRelic(new BlackLotus(), RelicType.SHARED);
 		
 		BaseMod.addRelic(new WantedPoster(), RelicType.SHARED);
+		
+		BaseMod.addRelic(new Powerstone(), RelicType.SHARED);
 		
 		logger.info("Relics added!");
 	}

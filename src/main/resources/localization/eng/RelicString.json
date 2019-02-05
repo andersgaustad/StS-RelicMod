@@ -7,6 +7,15 @@
     ]
   },
   
+  "PowerStone": {
+    "NAME": "Powerstone",
+    "FLAVOR": "It is faintly pulsating with energy.",
+    "DESCRIPTIONS": [
+      "Whenever you play #b",
+      " powers in a turn, add [E] at the start of your turn for the rest of this combat."
+    ]
+  }
+  
   "Wanted_Poster": {
     "NAME": "Wanted Poster",
     "FLAVOR": "WANTED; dead or ...well, dead.",
