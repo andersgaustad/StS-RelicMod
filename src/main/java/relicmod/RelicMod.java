@@ -13,7 +13,9 @@ import basemod.BaseMod;
 import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+
 import relics.BlackLotus;
+import relics.LightningRod;
 import relics.Powerstone;
 import relics.WantedPoster;
 
@@ -22,7 +24,7 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 	
 	public static final Logger logger = LogManager.getLogger(RelicMod.class.getName());
 	
-	private static String language = "eng";
+	private static final String language = "eng";
 	
 	public RelicMod() {
 		logger.info("RelicMod was created.");
@@ -41,10 +43,16 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		logger.info("Adding relics...");
 		
 		BaseMod.addRelic(new BlackLotus(), RelicType.SHARED);
+		logger.info("BlackLotus was added to pool");
 		
 		BaseMod.addRelic(new WantedPoster(), RelicType.SHARED);
+		logger.info("WantedPoster was added to pool");
 		
 		BaseMod.addRelic(new Powerstone(), RelicType.SHARED);
+		logger.info("Powerstone was added to pool");
+		
+		BaseMod.addRelic(new LightningRod(), RelicType.SHARED);
+		logger.info("LightningRod was added to pool");
 		
 		logger.info("Relics added!");
 	}

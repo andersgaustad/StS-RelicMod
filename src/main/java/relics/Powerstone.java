@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.BerserkPower;
 
 public class Powerstone extends AbstractRelicModRelic {
 
-	public final static String ID = "PowerStone";
+	public final static String ID = "Powerstone";
 	
 	private final static int POWERCARDSREQUIRED = 2;
 	private final static int POWERPROVIDED = 1;

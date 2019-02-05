@@ -7,14 +7,22 @@
     ]
   },
   
-  "PowerStone": {
+  "Lightning_Rod": {
+    "NAME": "Lightning Rod",
+    "FLAVOR": "'I command the storm, for I am eternal!' - Carl the Hermit, moments before being struck by lightning..",
+    "DESCRIPTIONS": [
+      "Whenever the first card you play each turn cost X, that card is played twice."
+    ]
+  },
+  
+  "Powerstone": {
     "NAME": "Powerstone",
     "FLAVOR": "It is faintly pulsating with energy.",
     "DESCRIPTIONS": [
       "Whenever you play #b",
       " powers in a turn, add [E] at the start of your turn for the rest of this combat."
     ]
-  }
+  },
   
   "Wanted_Poster": {
     "NAME": "Wanted Poster",
