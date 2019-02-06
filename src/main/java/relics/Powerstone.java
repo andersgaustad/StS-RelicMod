@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.Berserk;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.BerserkPower;
 
@@ -39,7 +38,7 @@ public class Powerstone extends AbstractRelicModRelic {
 				AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
 				
 				// Add energy buff from berserk
-				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BerserkPower(Berserk.DESCRIPTION, AbstractDungeon.player, POWERPROVIDED)));
+				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BerserkPower(getUpdatedDescription(), AbstractDungeon.player, POWERPROVIDED), 1));
 			}
 			
 			
