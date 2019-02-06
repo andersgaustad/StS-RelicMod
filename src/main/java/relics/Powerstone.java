@@ -20,6 +20,10 @@ public class Powerstone extends AbstractRelicModRelic {
 		super(ID, RelicTier.SHOP, LandingSound.MAGICAL);
 	}
 	
+	@Override
+	public void atTurnStart() {
+		this.counter = 0;
+	}
 	
 	@Override
 	public void onUseCard(AbstractCard card, UseCardAction action) {

@@ -13,7 +13,7 @@ import basemod.BaseMod;
 import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
-
+import relics.AncientShield;
 import relics.BlackLotus;
 import relics.LightningRod;
 import relics.Powerstone;
@@ -53,6 +53,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new LightningRod(), RelicType.SHARED);
 		logger.info("LightningRod was added to pool");
+		
+		BaseMod.addRelic(new AncientShield(), RelicType.SHARED);
+		logger.info("AncientShield was added to pool");
 		
 		logger.info("Relics added!");
 	}

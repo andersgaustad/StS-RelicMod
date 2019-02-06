@@ -1,4 +1,13 @@
 {
+  "Ancient_Shield": {
+    "NAME": "Ancient Shield",
+    "FLAVOR": "Heavy and old, but always reliable.",
+    "DESCRIPTIONS": [
+      "If you play only skills on you turn, gain #b",
+      " #y Artifact."
+    ]
+  },
+
   "Black_Lotus": {
     "NAME": "Black Lotus",
     "FLAVOR": "It feels ancient... and powerful.",
