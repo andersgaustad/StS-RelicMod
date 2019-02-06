@@ -16,6 +16,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import relics.AncientShield;
 import relics.BlackLotus;
 import relics.LightningRod;
+import relics.MidnightOil;
 import relics.Powerstone;
 import relics.WantedPoster;
 
@@ -56,6 +57,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new AncientShield(), RelicType.SHARED);
 		logger.info("AncientShield was added to pool");
+		
+		BaseMod.addRelic(new MidnightOil(), RelicType.SHARED);
+		logger.info("MidnightOil was added to pool");
 		
 		logger.info("Relics added!");
 	}

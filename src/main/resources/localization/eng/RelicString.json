@@ -24,6 +24,17 @@
     ]
   },
   
+  "Midnight_Oil": {
+    "NAME": "Midnight Oil",
+    "FLAVOR": "The darkness approaches, but with this flammable oil you feel ready for the night.",
+    "DESCRIPTIONS": [
+      "At the start of turn #b",
+      " gain #b",
+      " #yStrength and #b",
+      " #yDexterity."
+    ]
+  },
+  
   "Powerstone": {
     "NAME": "Powerstone",
     "FLAVOR": "It is faintly pulsating with energy.",
