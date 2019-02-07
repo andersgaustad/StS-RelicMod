@@ -19,6 +19,7 @@ import relics.LightningRod;
 import relics.MagicalSnailShell;
 import relics.MidnightOil;
 import relics.Powerstone;
+import relics.SwordOfVigilance;
 import relics.WantedPoster;
 
 @SpireInitializer
@@ -64,6 +65,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new MagicalSnailShell(), RelicType.SHARED);
 		logger.info("MagicalSnailShield was added to pool");
+		
+		BaseMod.addRelic(new SwordOfVigilance(), RelicType.SHARED);
+		logger.info("SwordOfVigilance was added to pool");
 		
 		logger.info("Relics added!");
 	}

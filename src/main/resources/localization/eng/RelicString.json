@@ -52,6 +52,15 @@
     ]
   },
   
+  "Sword_of_Vigilance": {
+    "NAME": "Sword of Vigilance",
+    "FLAVOR": "Strike true!",
+    "DESCRIPTIONS": [
+      "Whenever you play a basic #yStrike, gain #b",
+      " block."
+    ]
+  },
+  
   "Wanted_Poster": {
     "NAME": "Wanted Poster",
     "FLAVOR": "WANTED; dead or ...well, dead.",
