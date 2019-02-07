@@ -64,7 +64,7 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		logger.info("MidnightOil was added to pool");
 		
 		BaseMod.addRelic(new MagicalSnailShell(), RelicType.SHARED);
-		logger.info("MagicalSnailShield was added to pool");
+		logger.info("MagicalSnailShell was added to pool");
 		
 		BaseMod.addRelic(new SwordOfVigilance(), RelicType.SHARED);
 		logger.info("SwordOfVigilance was added to pool");
