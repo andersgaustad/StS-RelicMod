@@ -15,6 +15,7 @@ import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import relics.AncientShield;
 import relics.BlackLotus;
+import relics.Hearthstone;
 import relics.LightningRod;
 import relics.MagicalSnailShell;
 import relics.MidnightOil;
@@ -68,6 +69,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new SwordOfVigilance(), RelicType.SHARED);
 		logger.info("SwordOfVigilance was added to pool");
+		
+		BaseMod.addRelic(new Hearthstone(), RelicType.SHARED);
+		logger.info("Hearthstone was added to pool");
 		
 		logger.info("Relics added!");
 	}

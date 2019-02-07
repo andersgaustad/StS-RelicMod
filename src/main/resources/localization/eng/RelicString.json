@@ -16,6 +16,15 @@
     ]
   },
   
+  "Hearthstone": {
+    "NAME": "Hearthstone",
+    "FLAVOR": "It feels warm to touch.",
+    "DESCRIPTIONS": [
+      "Whenever you are attack, deal damage equal to #b",
+      " times your energy back to the enemy."
+    ]
+  },
+  
   "Lightning_Rod": {
     "NAME": "Lightning Rod",
     "FLAVOR": "'I command the storm, for I am eternal!' - Carl the Hermit, moments before being struck by lightning..",
