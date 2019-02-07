@@ -24,6 +24,14 @@
     ]
   },
   
+  "Magical_Snail_Shell": {
+    "NAME": "Magical Snail Shell",
+    "FLAVOR": "'A warrior's greatest weapon... is patience' - Unknown.",
+    "DESCRIPTIONS": [
+      "If you do not play any cards on your turn, prevent the next time you would lose HP."
+    ]
+  },
+  
   "Midnight_Oil": {
     "NAME": "Midnight Oil",
     "FLAVOR": "The darkness approaches, but with this flammable oil you feel ready for the night.",
