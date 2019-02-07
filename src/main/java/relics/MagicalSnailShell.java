@@ -43,4 +43,9 @@ public class MagicalSnailShell extends AbstractRelicModRelic {
 		}
 	}
 	
+	@Override
+	public String getUpdatedDescription() {
+		return DESCRIPTIONS[0];
+	}
+	
 }
