@@ -16,6 +16,17 @@
     ]
   },
   
+  "Broken_Chains": {
+    "NAME": "Broken Chains",
+    "FLAVOR": "It looks like the chains have been broken by an extremely powerful force.",
+    "DESCRIPTIONS": [
+      "Whenever you #yExhaust a #yStatus or #yCurse card on you turn, draw",
+      " a card.",
+      " #b",
+      " cards."
+    ]
+  },
+  
   "Hearthstone": {
     "NAME": "Hearthstone",
     "FLAVOR": "It feels warm to touch.",
