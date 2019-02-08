@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.FlameBarrierPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class Hearthstone extends AbstractRelicModRelic {
 
@@ -25,7 +26,7 @@ public class Hearthstone extends AbstractRelicModRelic {
 	
 	@Override
 	public void onUseCard(AbstractCard card, UseCardAction action) {
-		if (getPlayerEnergy() == 0) {
+		if ((getPlayerEnergy()-card.cost) == 0) {
 			this.stopPulse();
 		}
 	}
@@ -33,12 +34,15 @@ public class Hearthstone extends AbstractRelicModRelic {
 	@Override
 	public void onPlayerEndTurn() {
 		// Activate
-		for (int i=0; i<getPlayerEnergy(); i++) {
-			// Relic activates!
+		// Relic activates!
+		if (getPlayerEnergy()>0) {
 			this.flash();
 			AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
 			
-			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FlameBarrierPower(AbstractDungeon.player, FLAMESPERENERGY)));
+			for (int i=0; i<getPlayerEnergy(); i++) {	
+				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FlameBarrierPower(AbstractDungeon.player, FLAMESPERENERGY), FLAMESPERENERGY));
+				
+			}
 		}
 	}
 	
@@ -48,7 +52,8 @@ public class Hearthstone extends AbstractRelicModRelic {
 	}
 	
 	private static int getPlayerEnergy() {
-		return AbstractDungeon.player.energy.energy;
+		return EnergyPanel.getCurrentEnergy();
+		//return AbstractDungeon.player.energy.energy;
 	}
 	
 }
