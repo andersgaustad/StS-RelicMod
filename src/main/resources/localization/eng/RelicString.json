@@ -29,7 +29,7 @@
     "NAME": "Lightning Rod",
     "FLAVOR": "'I command the storm, for I am eternal!' - Carl the Hermit, moments before being struck by lightning..",
     "DESCRIPTIONS": [
-      "Whenever the first card you play each turn cost X, that card is played twice."
+      "Whenever the first card you play each turn cost X, that card is played twice. When you do, #yExhaust it."
     ]
   },
   

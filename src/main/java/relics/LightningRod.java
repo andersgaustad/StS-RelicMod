@@ -27,6 +27,9 @@ public class LightningRod extends AbstractRelicModRelic {
 			
 			AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
 			
+			// Exhaust, might be too OP else
+			card.exhaust = true;
+			
 			AbstractMonster monster = null;
 			
 			if (action.target != null) {
