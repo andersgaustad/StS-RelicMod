@@ -23,6 +23,7 @@ import relics.MidnightOil;
 import relics.Powerstone;
 import relics.SwordOfVigilance;
 import relics.WantedPoster;
+import relics.WarlordsTankard;
 
 @SpireInitializer
 public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
@@ -76,6 +77,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new BrokenChains(), RelicType.RED);
 		logger.info("BrokenChains was added to pool");
+		
+		BaseMod.addRelic(new WarlordsTankard(), RelicType.SHARED);
+		logger.info("WarlordsTankard was added to pool");
 		
 		logger.info("Relics added!");
 	}

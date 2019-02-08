@@ -89,6 +89,15 @@
       " #yVulnerable to ALL Elites and Bosses. Gain #b",
       " #yGold for each Elite and Boss killed."
     ]
+  },
+  
+  "Warlord's_Tankard": {
+    "NAME": "Warlord's Tankard",
+    "FLAVOR": "An unnecessarily big mug crafted for true champions.",
+    "DESCRIPTIONS": [
+      "At the end of Elite combats, heal #b",
+      " HP."
+    ]
   }
   
 }
