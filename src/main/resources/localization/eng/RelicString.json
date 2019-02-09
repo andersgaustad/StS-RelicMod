@@ -27,6 +27,16 @@
     ]
   },
   
+  "Coiled_Sword": {
+    "NAME": "Coiled Sword",
+    "FLAVOR": "This decorative sword has a twisted blade and is covered in ash.",
+    "DESCRIPTIONS": [
+      "When you enter a Rest Site, heal #b",
+      " and gain #b",
+      " Gold for every floor you have visited since the last Rest Site."
+    ]
+  },
+  
   "Hearthstone": {
     "NAME": "Hearthstone",
     "FLAVOR": "It feels warm to touch.",

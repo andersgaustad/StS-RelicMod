@@ -16,6 +16,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import relics.AncientShield;
 import relics.BlackLotus;
 import relics.BrokenChains;
+import relics.CoiledSword;
 import relics.Hearthstone;
 import relics.LightningRod;
 import relics.MagicalSnailShell;
@@ -80,6 +81,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new WarlordsTankard(), RelicType.SHARED);
 		logger.info("WarlordsTankard was added to pool");
+		
+		BaseMod.addRelic(new CoiledSword(), RelicType.SHARED);
+		logger.info("CoiledSword was added to pool");
 		
 		logger.info("Relics added!");
 	}
