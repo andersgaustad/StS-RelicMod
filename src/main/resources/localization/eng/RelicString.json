@@ -82,6 +82,24 @@
     ]
   },
   
+  "Scholar's_Parchment": {
+    "NAME": "Scholar's Parchment",
+    "FLAVOR": "An old piece of paper riddled with text written on a language you do not understand.",
+    "DESCRIPTIONS": [
+      "After your draw step, gain #b",
+      " #yDexterity until the end of your turn when you draw a card."
+    ]
+  },
+  
+  "Scholar's_Quill": {
+    "NAME": "Scholar's Quill",
+    "FLAVOR": "An old quill used for writing down knowledge.",
+    "DESCRIPTIONS": [
+      "After your draw step, gain #b",
+      " #yStrength until the end of your turn when you draw a card."
+    ]
+  },
+  
   "Sword_of_Vigilance": {
     "NAME": "Sword of Vigilance",
     "FLAVOR": "Strike true!",

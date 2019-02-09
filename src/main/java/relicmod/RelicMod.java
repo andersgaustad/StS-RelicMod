@@ -22,6 +22,8 @@ import relics.LightningRod;
 import relics.MagicalSnailShell;
 import relics.MidnightOil;
 import relics.Powerstone;
+import relics.ScholarsParchment;
+import relics.ScholarsQuill;
 import relics.SwordOfVigilance;
 import relics.WantedPoster;
 import relics.WarlordsTankard;
@@ -84,6 +86,12 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new CoiledSword(), RelicType.SHARED);
 		logger.info("CoiledSword was added to pool");
+		
+		BaseMod.addRelic(new ScholarsQuill(), RelicType.SHARED);
+		logger.info("ScholarsQuill was added to pool");
+		
+		BaseMod.addRelic(new ScholarsParchment(), RelicType.SHARED);
+		logger.info("ScholarsParchment was added to pool");
 		
 		logger.info("Relics added!");
 	}
