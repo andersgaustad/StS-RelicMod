@@ -14,6 +14,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import relics.AncientShield;
+import relics.AngelFigurine;
 import relics.BlackLotus;
 import relics.BrokenChains;
 import relics.CoiledSword;
@@ -92,6 +93,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new ScholarsParchment(), RelicType.SHARED);
 		logger.info("ScholarsParchment was added to pool");
+		
+		BaseMod.addRelic(new AngelFigurine(), RelicType.SHARED);
+		logger.info("AngelFigurine was added to pool");
 		
 		logger.info("Relics added!");
 	}

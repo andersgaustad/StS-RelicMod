@@ -7,6 +7,14 @@
       " #yArtifact."
     ]
   },
+  
+  "Angel_Figurine": {
+    "NAME": "Angel Figurine",
+    "FLAVOR": "As you grip this small figurine you feel like someone is watching over you.",
+    "DESCRIPTIONS": [
+      "Discard the first #rCurse you draw. When you do, add an Apotheosis card to your hand."
+    ]
+  },
 
   "Black_Lotus": {
     "NAME": "Black Lotus",
