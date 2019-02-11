@@ -54,6 +54,11 @@ public class ScholarsParchment extends AbstractRelicModRelic {
 	}
 	
 	@Override
+	public void onUsePotion() {
+		this.playersTurn = true;
+	}
+	
+	@Override
 	public String getUpdatedDescription() {
 		return DESCRIPTIONS[0] + STRENGTHBOOST + DESCRIPTIONS[1];
 	}
