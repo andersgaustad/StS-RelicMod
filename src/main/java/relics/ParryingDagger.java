@@ -28,9 +28,9 @@ public class ParryingDagger extends AbstractRelicModRelic {
 					// Relics activates!
 					this.flash();
 					AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-					
-					// Test if this works
+						
 					AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(monster, AbstractDungeon.player, new WeakPower(monster, STACKSOFWEAK, false)));
+					break;
 				}
 			}
 		}
