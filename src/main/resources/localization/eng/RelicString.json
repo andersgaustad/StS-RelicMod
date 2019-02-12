@@ -81,6 +81,16 @@
     ]
   },
   
+  "Parrying_Dagger": {
+    "NAME": "Parrying Dagger",
+    "FLAVOR": "This dagger has a slightly triangular guard used for parrying enemy blows.",
+    "DESCRIPTIONS": [
+      "If you have at least #b",
+      " #yBlock at the end of your turn, apply #b",
+      " #yWeak to the first attacking enemy."
+    ]
+  },
+  
   "Powerstone": {
     "NAME": "Powerstone",
     "FLAVOR": "It is faintly pulsating with energy.",

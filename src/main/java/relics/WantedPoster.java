@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
-import helper.Helper;
+import helper.MonsterLogic;
 
 public class WantedPoster extends AbstractRelicModRelic {
 	
@@ -26,7 +26,7 @@ public class WantedPoster extends AbstractRelicModRelic {
 	public void atBattleStart() {
 		// Apply vulnerable to each elite and boss
 		for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-			if (Helper.enemyIsElite(monster) || Helper.enemyIsBoss(monster)) {
+			if (MonsterLogic.enemyIsElite(monster) || MonsterLogic.enemyIsBoss(monster)) {
 				// Relic activates
 				this.flash();
 				AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
@@ -40,7 +40,7 @@ public class WantedPoster extends AbstractRelicModRelic {
 	public void onMonsterDeath(AbstractMonster m) {
 		
 		// Is enemy dead (and was enemy elite or boss)?
-		if ((m.currentHealth == 0) && (Helper.enemyIsElite(m) || Helper.enemyIsBoss(m))) {
+		if ((m.currentHealth == 0) && (MonsterLogic.enemyIsElite(m) || MonsterLogic.enemyIsBoss(m))) {
 			// Relic activates
 			this.flash();
 			AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));

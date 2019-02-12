@@ -22,6 +22,7 @@ import relics.Hearthstone;
 import relics.LightningRod;
 import relics.MagicalSnailShell;
 import relics.MidnightOil;
+import relics.ParryingDagger;
 import relics.Powerstone;
 import relics.ScholarsParchment;
 import relics.ScholarsQuill;
@@ -96,6 +97,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new AngelFigurine(), RelicType.SHARED);
 		logger.info("AngelFigurine was added to pool");
+		
+		BaseMod.addRelic(new ParryingDagger(), RelicType.GREEN);
+		logger.info("ParryingDagger was added to pool");
 		
 		logger.info("Relics added!");
 	}

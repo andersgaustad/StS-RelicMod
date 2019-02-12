@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import helper.Helper;
+import helper.MonsterLogic;
 
 public class WarlordsTankard extends AbstractRelicModRelic {
 
@@ -23,7 +23,7 @@ public class WarlordsTankard extends AbstractRelicModRelic {
 	public void atBattleStart() {
 		this.eliteCombat = false;
 		for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-			if (Helper.enemyIsElite(monster)) {
+			if (MonsterLogic.enemyIsElite(monster)) {
 				this.eliteCombat = true;
 				return;
 			}
