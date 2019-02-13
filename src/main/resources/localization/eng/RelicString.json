@@ -127,6 +127,15 @@
     ]
   },
   
+  "Trebuchet_Toy": {
+    "NAME": "Trebuchet Toy",
+    "FLAVOR": "Real trebuchets can use a counterweight to launch a 90kg projectile over 300m, but this is just a toy.",
+    "DESCRIPTIONS": [
+      "When you THROW a potion, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  
   "Wanted_Poster": {
     "NAME": "Wanted Poster",
     "FLAVOR": "WANTED; dead or ...well, dead.",

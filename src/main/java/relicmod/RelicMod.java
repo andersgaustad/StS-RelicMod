@@ -27,6 +27,7 @@ import relics.Powerstone;
 import relics.ScholarsParchment;
 import relics.ScholarsQuill;
 import relics.SwordOfVigilance;
+import relics.TrebuchetToy;
 import relics.WantedPoster;
 import relics.WarlordsTankard;
 
@@ -100,6 +101,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new ParryingDagger(), RelicType.GREEN);
 		logger.info("ParryingDagger was added to pool");
+		
+		BaseMod.addRelic(new TrebuchetToy(), RelicType.SHARED);
+		logger.info("TrebuchetToy was added to pool");
 		
 		logger.info("Relics added!");
 	}
