@@ -17,6 +17,7 @@ import relics.AncientShield;
 import relics.AngelFigurine;
 import relics.BlackLotus;
 import relics.BrokenChains;
+import relics.CampingSupplies;
 import relics.CoiledSword;
 import relics.Hearthstone;
 import relics.LightningRod;
@@ -104,6 +105,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new TrebuchetToy(), RelicType.SHARED);
 		logger.info("TrebuchetToy was added to pool");
+		
+		BaseMod.addRelic(new CampingSupplies(), RelicType.SHARED);
+		logger.info("CampingSupplies was added to pool");
 		
 		logger.info("Relics added!");
 	}

@@ -35,6 +35,14 @@
     ]
   },
   
+  "Camping_Supplies": {
+    "NAME": "Camping Supplies",
+    "FLAVOR": "Among these supplies are salted meat, water, and dry firewood.",
+    "DESCRIPTIONS": [
+      "Upon pickup, enter a Rest Room."
+    ]
+  },
+  
   "Coiled_Sword": {
     "NAME": "Coiled Sword",
     "FLAVOR": "This decorative sword has a twisted blade and is covered in ash.",
