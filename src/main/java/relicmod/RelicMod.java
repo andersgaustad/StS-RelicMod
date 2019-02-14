@@ -24,6 +24,7 @@ import relics.Hearthstone;
 import relics.LightningRod;
 import relics.MagicalSnailShell;
 import relics.MidnightOil;
+import relics.MysteryBox;
 import relics.ParryingDagger;
 import relics.Powerstone;
 import relics.ScholarsParchment;
@@ -112,6 +113,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new Coupon(), RelicType.SHARED);
 		logger.info("Coupon was added to pool");
+		
+		BaseMod.addRelic(new MysteryBox(), RelicType.SHARED);
+		logger.info("MysteryBox was added to pool");
 		
 		logger.info("Relics added!");
 	}

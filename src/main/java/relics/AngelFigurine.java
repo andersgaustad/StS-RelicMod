@@ -6,11 +6,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.colorless.Apotheosis;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class AngelFigurine extends AbstractRelicModRelic {
+public class AngelFigurine extends AbstractRelicModToggleRelic {
 
 	public static final String ID = "Angel_Figurine";
 	
-	private boolean active = true;
 	
 	public AngelFigurine() {
 		super(ID, RelicTier.RARE, LandingSound.MAGICAL);
@@ -48,21 +47,5 @@ public class AngelFigurine extends AbstractRelicModRelic {
 		return DESCRIPTIONS[0];
 	}
 	
-	
-	private void activate() {
-		setActive(true);
-	}
-	
-	private void deactivate() {
-		setActive(false);
-	}
-	
-	private void setActive(boolean activate) {
-		// XOR; Same as: this.active!=activate
-		if (this.active ^ activate) {
-			this.active = activate;
-			
-			this.img = AbstractRelicModRelic.getRelicTexture(ID, activate);
-		}
-	}
+
 }

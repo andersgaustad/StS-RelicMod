@@ -98,6 +98,16 @@
     ]
   },
   
+  "Mystery_Box": {
+    "NAME": "Mystery Box",
+    "FLAVOR": "What's in the box?",
+    "DESCRIPTIONS": [
+      "On pickup, gain a random relic.",
+      "The box has been opened. It contained a ",
+      "!"
+    ]
+  },
+  
   "Parrying_Dagger": {
     "NAME": "Parrying Dagger",
     "FLAVOR": "This dagger has a slightly triangular guard used for parrying enemy blows.",
