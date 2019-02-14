@@ -53,6 +53,15 @@
     ]
   },
   
+  "Coupon": {
+    "NAME": "Coupon",
+    "FLAVOR": "Support small business, and get rewarded with a FREE* relic!",
+    "DESCRIPTIONS": [
+      "Gain a random relic every ",
+      "th time you spend #yGold at a shop"
+    ]
+  },
+  
   "Hearthstone": {
     "NAME": "Hearthstone",
     "FLAVOR": "It feels warm to touch.",

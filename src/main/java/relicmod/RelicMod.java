@@ -19,6 +19,7 @@ import relics.BlackLotus;
 import relics.BrokenChains;
 import relics.CampingSupplies;
 import relics.CoiledSword;
+import relics.Coupon;
 import relics.Hearthstone;
 import relics.LightningRod;
 import relics.MagicalSnailShell;
@@ -108,6 +109,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new CampingSupplies(), RelicType.SHARED);
 		logger.info("CampingSupplies was added to pool");
+		
+		BaseMod.addRelic(new Coupon(), RelicType.SHARED);
+		logger.info("Coupon was added to pool");
 		
 		logger.info("Relics added!");
 	}
