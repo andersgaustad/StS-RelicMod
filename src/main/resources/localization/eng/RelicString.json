@@ -43,6 +43,16 @@
     ]
   },
   
+  "Chu_Ko_Nu": {
+    "NAME": "Chu Ko Nu",
+    "FLAVOR": "This old crossbow can fire multiple bolts in succession.",
+    "DESCRIPTIONS": [
+      "If you play no cards that target enemies, deal #b",
+      " damage to #b",
+      " random enemies."
+    ]
+  },
+  
   "Coiled_Sword": {
     "NAME": "Coiled Sword",
     "FLAVOR": "This decorative sword has a twisted blade and is covered in ash.",
