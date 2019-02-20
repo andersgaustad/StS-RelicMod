@@ -164,6 +164,15 @@
     ]
   },
   
+  "Stuffed_Toy_Snake": {
+    "NAME": "Stuffed Toy Snake",
+    "FLAVOR": "Touching this fuzzy toy makes you feel dizzy.",
+    "DESCRIPTIONS": [
+      "When you play a card with cost #b",
+      " or higher, randomize its cost."
+    ]
+  },
+  
   "Sword_of_Vigilance": {
     "NAME": "Sword of Vigilance",
     "FLAVOR": "Strike true!",
