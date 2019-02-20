@@ -43,6 +43,15 @@
     ]
   },
   
+  "Chocolate_Milk": {
+    "NAME": "Chocolate Milk",
+    "FLAVOR": "Yummy!",
+    "DESCRIPTIONS": [
+      "When you enter a room with no monsters, heal #b",
+      " HP."
+    ]
+  },
+  
   "Chu_Ko_Nu": {
     "NAME": "Chu Ko Nu",
     "FLAVOR": "This old crossbow can fire multiple bolts in succession.",
