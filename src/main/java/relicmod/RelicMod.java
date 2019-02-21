@@ -29,6 +29,7 @@ import relics.ParryingDagger;
 import relics.Powerstone;
 import relics.ScholarsParchment;
 import relics.ScholarsQuill;
+import relics.StuffedToySnake;
 import relics.SwordOfVigilance;
 import relics.TrebuchetToy;
 import relics.WantedPoster;
@@ -116,6 +117,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new MysteryBox(), RelicType.SHARED);
 		logger.info("MysteryBox was added to pool");
+		
+		BaseMod.addRelic(new StuffedToySnake(), RelicType.SHARED);
+		logger.info("StuffedToySnake was added to pool");
 		
 		logger.info("Relics added!");
 	}
