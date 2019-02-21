@@ -20,6 +20,7 @@ import relics.BrokenChains;
 import relics.CampingSupplies;
 import relics.CoiledSword;
 import relics.Coupon;
+import relics.ForgottenJournal;
 import relics.Hearthstone;
 import relics.LightningRod;
 import relics.MagicalSnailShell;
@@ -120,6 +121,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new StuffedToySnake(), RelicType.SHARED);
 		logger.info("StuffedToySnake was added to pool");
+		
+		BaseMod.addRelic(new ForgottenJournal(), RelicType.SHARED);
+		logger.info("ForgottenJournal was added to pool");
 		
 		logger.info("Relics added!");
 	}

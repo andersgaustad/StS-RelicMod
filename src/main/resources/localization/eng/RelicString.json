@@ -77,7 +77,16 @@
     "FLAVOR": "Support small business, and get rewarded with a FREE* relic!",
     "DESCRIPTIONS": [
       "Gain a random relic every ",
-      "th time you spend #yGold at a shop"
+      "th time you spend #yGold at a shop."
+    ]
+  },
+  
+  "Forgotten_Journal": {
+    "NAME": "Forgotten Journal",
+    "FLAVOR": "Its content is unreadable, but it still feels oddly familiar.",
+    "DESCRIPTIONS": [
+      "When you play a card non-",
+      " card, gain energy equal to its cost.";
     ]
   },
   
