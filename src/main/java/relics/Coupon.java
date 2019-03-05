@@ -2,7 +2,7 @@ package relics;
 
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.rewards.RewardItem;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.ShopRoom;
 
@@ -38,10 +38,16 @@ public class Coupon extends AbstractRelicModRelic {
 			// Relic activates!
 			this.flash();
 			
-			AbstractDungeon.getCurrRoom().rewards.add(new RewardItem(AbstractDungeon.returnRandomRelic(AbstractDungeon.returnRandomRelicTier())));
-			AbstractDungeon.combatRewardScreen.open();
+			
+			// Crashes everything:
+			//AbstractDungeon.getCurrRoom().spawnRelicAndObtain(0, 0, AbstractDungeon.returnRandomRelic(AbstractDungeon.returnRandomRelicTier()));
+			
+			AbstractRelic relic = AbstractDungeon.returnRandomRelic(AbstractDungeon.returnRandomRelicTier());
+			AbstractDungeon.getCurrRoom().relics.add(relic);
+			relic.obtain();
 			
 			this.counter = 0;
+			
 		}
 	}
 	
