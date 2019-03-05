@@ -99,6 +99,16 @@
     ]
   },
   
+  "Heart_of_Steel": {
+    "NAME": "Heart of Steel",
+    "FLAVOR": "It consist of a wide variety of metals, like bronze iron, steel, and orichalcum.",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yBlock at the end of your turn. Increase this number by #b"
+      " when you smith."
+    ]
+  },
+  
   "Lightning_Rod": {
     "NAME": "Lightning Rod",
     "FLAVOR": "'I command the storm, for I am eternal!' - Carl the Hermit, moments before being struck by lightning..",
