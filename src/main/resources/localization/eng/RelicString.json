@@ -18,7 +18,7 @@
   
   "Assassin's_Tools": {
     "NAME": "Assassin's Tools",
-    "FLAVOR": "As you grip this small figurine you feel like someone is watching over you.",
+    "FLAVOR": "Fine and sharp tools belonging to a master assassin.",
     "DESCRIPTIONS": [
       "When you play an upgraded card, apply #b",
       " #yPoison to ALL enemies."
@@ -152,6 +152,15 @@
       "On pickup, gain a random relic.",
       "The box has been opened. It contained a ",
       "!"
+    ]
+  },
+  
+  "Orb_Optimizer": {
+    "NAME": "Orb Optimizer",
+    "FLAVOR": "This small embedded microcontroller keeps track of your orbs.",
+    "DESCRIPTIONS": [
+      "If a channel would cause you to evoke a orb, evoke that orb "
+      " times instead."
     ]
   },
   

@@ -28,6 +28,7 @@ import relics.LightningRod;
 import relics.MagicalSnailShell;
 import relics.MidnightOil;
 import relics.MysteryBox;
+import relics.OrbOptimizer;
 import relics.ParryingDagger;
 import relics.Powerstone;
 import relics.ScholarsParchment;
@@ -136,6 +137,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new AssassinsTools(), RelicType.GREEN);
 		logger.info("AssassinsTools was added to pool");
+		
+		BaseMod.addRelic(new OrbOptimizer(), RelicType.BLUE);
+		logger.info("OrbOptimizer was added to pool");
 		
 		logger.info("Relics added!");
 	}
