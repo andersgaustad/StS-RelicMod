@@ -31,6 +31,7 @@ import relics.ParryingDagger;
 import relics.Powerstone;
 import relics.ScholarsParchment;
 import relics.ScholarsQuill;
+import relics.SigiledHammer;
 import relics.StuffedToySnake;
 import relics.SwordOfVigilance;
 import relics.TrebuchetToy;
@@ -128,6 +129,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new HeartOfSteel(), RelicType.SHARED);
 		logger.info("HeartOfSteel was added to pool");
+		
+		BaseMod.addRelic(new SigiledHammer(), RelicType.SHARED);
+		logger.info("SigiledHammer was added to pool");
 		
 		logger.info("Relics added!");
 	}

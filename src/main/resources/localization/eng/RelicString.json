@@ -183,6 +183,15 @@
     ]
   },
   
+  "Sigiled_Hammer": {
+    "NAME": "Sigiled Hammer",
+    "FLAVOR": "As you smith with this hammer, you hear the sound of metal hitting metal from hammers that are not there.",
+    "DESCRIPTIONS": [
+      "When you smith, add #b",
+      " extra copies of the upgraded card to your deck." 
+    ]
+  },
+  
   "Stuffed_Toy_Snake": {
     "NAME": "Stuffed Toy Snake",
     "FLAVOR": "Touching this fuzzy toy makes you feel dizzy.",
