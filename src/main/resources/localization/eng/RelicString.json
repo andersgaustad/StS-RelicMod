@@ -15,6 +15,15 @@
       "Discard the first #rCurse you draw. When you do, add an Apotheosis card to your hand."
     ]
   },
+  
+  "Assassin's_Tools": {
+    "NAME": "Assassin's Tools",
+    "FLAVOR": "As you grip this small figurine you feel like someone is watching over you.",
+    "DESCRIPTIONS": [
+      "When you play an upgraded card, apply #b",
+      " #yPoison to ALL enemies."
+    ]
+  },
 
   "Black_Lotus": {
     "NAME": "Black Lotus",

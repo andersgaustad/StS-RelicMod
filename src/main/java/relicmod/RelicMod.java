@@ -15,6 +15,7 @@ import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import relics.AncientShield;
 import relics.AngelFigurine;
+import relics.AssassinsTools;
 import relics.BlackLotus;
 import relics.BrokenChains;
 import relics.CampingSupplies;
@@ -132,6 +133,9 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 		
 		BaseMod.addRelic(new SigiledHammer(), RelicType.SHARED);
 		logger.info("SigiledHammer was added to pool");
+		
+		BaseMod.addRelic(new AssassinsTools(), RelicType.GREEN);
+		logger.info("AssassinsTools was added to pool");
 		
 		logger.info("Relics added!");
 	}
