@@ -3,8 +3,8 @@
   "name": "RelicMod",
   "author_list": ["Cousland"],
   "description": "A mod that adds a handful of relics to the card crawler game Slay the Spire.",
-  "version": "${project.version}",
-  "sts_version": "${SlayTheSpire.version}",
-  "mts_version": "${ModTheSpire.version}",
+  "version": "0.1",
+  "sts_version": "03-29-2018",
+  "mts_version": "3.9.2",
   "dependencies": ["basemod"]
 }
