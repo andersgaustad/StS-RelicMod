@@ -43,12 +43,12 @@ import relics.WarlordsTankard;
 @SpireInitializer
 public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 	
-	public static final Logger logger = LogManager.getLogger(RelicMod.class.getName());
+	public static final Logger LOGGER = LogManager.getLogger(RelicMod.class.getName());
 	
-	private static final String language = "eng";
+	private static final String LANGUAGE = "eng";
 	
 	public RelicMod() {
-		logger.info("RelicMod was created.");
+		LOGGER.info("RelicMod was created.");
 		BaseMod.subscribe(this);
 	}
 	
@@ -61,99 +61,102 @@ public class RelicMod implements EditRelicsSubscriber, EditStringsSubscriber {
 	@Override
 	public void receiveEditRelics() {
 		
-		logger.info("Adding relics...");
+		LOGGER.info("Adding relics...");
 		
 		BaseMod.addRelic(new BlackLotus(), RelicType.SHARED);
-		logger.info("BlackLotus was added to pool");
+		LOGGER.info("BlackLotus was added to pool");
 		
 		BaseMod.addRelic(new WantedPoster(), RelicType.SHARED);
-		logger.info("WantedPoster was added to pool");
+		LOGGER.info("WantedPoster was added to pool");
 		
 		BaseMod.addRelic(new Powerstone(), RelicType.SHARED);
-		logger.info("Powerstone was added to pool");
+		LOGGER.info("Powerstone was added to pool");
 		
 		BaseMod.addRelic(new LightningRod(), RelicType.SHARED);
-		logger.info("LightningRod was added to pool");
+		LOGGER.info("LightningRod was added to pool");
 		
 		BaseMod.addRelic(new AncientShield(), RelicType.SHARED);
-		logger.info("AncientShield was added to pool");
+		LOGGER.info("AncientShield was added to pool");
 		
 		BaseMod.addRelic(new MidnightOil(), RelicType.SHARED);
-		logger.info("MidnightOil was added to pool");
+		LOGGER.info("MidnightOil was added to pool");
 		
 		BaseMod.addRelic(new MagicalSnailShell(), RelicType.SHARED);
-		logger.info("MagicalSnailShell was added to pool");
+		LOGGER.info("MagicalSnailShell was added to pool");
 		
 		BaseMod.addRelic(new SwordOfVigilance(), RelicType.SHARED);
-		logger.info("SwordOfVigilance was added to pool");
+		LOGGER.info("SwordOfVigilance was added to pool");
 		
 		BaseMod.addRelic(new Hearthstone(), RelicType.SHARED);
-		logger.info("Hearthstone was added to pool");
+		LOGGER.info("Hearthstone was added to pool");
 		
 		BaseMod.addRelic(new BrokenChains(), RelicType.RED);
-		logger.info("BrokenChains was added to pool");
+		LOGGER.info("BrokenChains was added to pool");
 		
 		BaseMod.addRelic(new WarlordsTankard(), RelicType.SHARED);
-		logger.info("WarlordsTankard was added to pool");
+		LOGGER.info("WarlordsTankard was added to pool");
 		
 		BaseMod.addRelic(new CoiledSword(), RelicType.SHARED);
-		logger.info("CoiledSword was added to pool");
+		LOGGER.info("CoiledSword was added to pool");
 		
 		BaseMod.addRelic(new ScholarsQuill(), RelicType.SHARED);
-		logger.info("ScholarsQuill was added to pool");
+		LOGGER.info("ScholarsQuill was added to pool");
 		
 		BaseMod.addRelic(new ScholarsParchment(), RelicType.SHARED);
-		logger.info("ScholarsParchment was added to pool");
+		LOGGER.info("ScholarsParchment was added to pool");
 		
 		BaseMod.addRelic(new AngelFigurine(), RelicType.SHARED);
-		logger.info("AngelFigurine was added to pool");
+		LOGGER.info("AngelFigurine was added to pool");
 		
 		BaseMod.addRelic(new ParryingDagger(), RelicType.GREEN);
-		logger.info("ParryingDagger was added to pool");
+		LOGGER.info("ParryingDagger was added to pool");
 		
 		BaseMod.addRelic(new TrebuchetToy(), RelicType.SHARED);
-		logger.info("TrebuchetToy was added to pool");
+		LOGGER.info("TrebuchetToy was added to pool");
 		
 		BaseMod.addRelic(new CampingSupplies(), RelicType.SHARED);
-		logger.info("CampingSupplies was added to pool");
+		LOGGER.info("CampingSupplies was added to pool");
 		
 		BaseMod.addRelic(new Coupon(), RelicType.SHARED);
-		logger.info("Coupon was added to pool");
+		LOGGER.info("Coupon was added to pool");
 		
 		BaseMod.addRelic(new MysteryBox(), RelicType.SHARED);
-		logger.info("MysteryBox was added to pool");
+		LOGGER.info("MysteryBox was added to pool");
 		
 		BaseMod.addRelic(new StuffedToySnake(), RelicType.SHARED);
-		logger.info("StuffedToySnake was added to pool");
+		LOGGER.info("StuffedToySnake was added to pool");
 		
 		BaseMod.addRelic(new ForgottenJournal(), RelicType.SHARED);
-		logger.info("ForgottenJournal was added to pool");
+		LOGGER.info("ForgottenJournal was added to pool");
 		
 		BaseMod.addRelic(new HeartOfSteel(), RelicType.SHARED);
-		logger.info("HeartOfSteel was added to pool");
+		LOGGER.info("HeartOfSteel was added to pool");
 		
 		BaseMod.addRelic(new SigiledHammer(), RelicType.SHARED);
-		logger.info("SigiledHammer was added to pool");
+		LOGGER.info("SigiledHammer was added to pool");
 		
 		BaseMod.addRelic(new AssassinsTools(), RelicType.GREEN);
-		logger.info("AssassinsTools was added to pool");
+		LOGGER.info("AssassinsTools was added to pool");
 		
 		BaseMod.addRelic(new OrbOptimizer(), RelicType.BLUE);
-		logger.info("OrbOptimizer was added to pool");
+		LOGGER.info("OrbOptimizer was added to pool");
 		
-		logger.info("Relics added!");
+		BaseMod.addRelic(new relics.Compiler(), RelicType.BLUE);
+		LOGGER.info("Compiler was added to pool");
+		
+		LOGGER.info("Relics added!");
 	}
 
 	@Override
 	public void receiveEditStrings() {
-		final String pathToRelicStrings = "localization/" + RelicMod.language + "/RelicString.json";
+		final String pathToRelicStrings = "localization/" + RelicMod.LANGUAGE + "/RelicString.json";
 		String relicStrings = Gdx.files.internal(pathToRelicStrings).readString(String.valueOf(StandardCharsets.UTF_8));
 		
-		logger.info("Loading relic strings...");
+		LOGGER.info("Loading relic strings...");
 		
 		BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
 		
-		logger.info("Relic string was succesfully loaded!");
+		LOGGER.info("Relic string was succesfully loaded!");
 	}
 	
 		

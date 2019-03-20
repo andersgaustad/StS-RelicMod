@@ -81,6 +81,14 @@
     ]
   },
   
+  "Compiler": {
+    "NAME": "Compiler",
+    "FLAVOR": "01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001",
+    "DESCRIPTIONS": [
+      "Draw a card for each unique orb you have at the start of each turn."
+    ]
+  },
+  
   "Coupon": {
     "NAME": "Coupon",
     "FLAVOR": "Support small business, and get rewarded with a FREE* relic!",
